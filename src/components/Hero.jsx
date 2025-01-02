@@ -3,12 +3,14 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="text-center mx-16 my-16">
-      <figure className="rounded-full bg-white h-28 w-28 overflow-hidden mx-auto mb-5">
+    <div className="relative w-1/4">
+      <figure className="rounded-full bg-white h-28 mt-16 w-28 overflow-hidden mx-auto mb-5">
         <img className="" src="http://robohash.org/asgasgs.png" alt="Avatar" />
       </figure>
-      <h1 className="text-2xl font-bold">Gilang Cahyono</h1>
-      <p className="mb-5 text-base">IT | Programmer | Web Developer</p>
+      <h1 className="text-2xl font-bold text-center">Gilang Cahyono</h1>
+      <p className="mb-5 text-base text-center">
+        IT | Programmer | Web Developer
+      </p>
       <div className="mb-9 flex justify-center items-center gap-2">
         <a href="https://github.com/gilangcahyono" target="_blank">
           <svg
@@ -46,7 +48,7 @@ const Hero = () => {
           </svg>
         </a>
       </div>
-      <div className="flex justify-center gap-3 absolute left-0 right-0">
+      <div className="flex justify-center gap-3">
         <a
           className="rounded-3xl text-sm outline outline-1 px-5 py-1.5 hover:bg-cyan-500 hover:outline-none transition"
           href="https://wa.me/6285236052843"
@@ -61,7 +63,7 @@ const Hero = () => {
           Download CV
         </a>
       </div>
-      <p className="text-sm absolute bottom-5 w-full left-0">
+      <p className="text-sm absolute text-center bottom-5 w-full left-0">
         © 2025 All rights reserved.
       </p>
     </div>

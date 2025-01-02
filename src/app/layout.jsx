@@ -19,9 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.className + " text-gray-100"}>
       <body className="antialiased bg-cyan-500">
         <div className="bg-zinc-700 m-20 rounded-3xl overflow-hidden flex absolute inset-0 justify-between">
-          <div className="relative">
-            <Hero />
-          </div>
+          <Hero />
           <div className="rounded-tl-3xl rounded-bl-3xl bg-zinc-900 py-10 w-4/5 grid items-center pr-7">
             {children}
           </div>

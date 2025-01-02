@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const links = [
@@ -134,10 +134,8 @@ const Navbar = () => {
 
   console.log(router);
 
-  const nextPage = () => {
-
-  }
-  const prevPage = () => { }
+  const nextPage = () => {};
+  const prevPage = () => {};
 
   return (
     <nav className="absolute flex flex-col rounded-tl-3xl rounded-bl-3xl bg-zinc-600 right-0 top-0 bottom-0 overflow-hidden">
@@ -147,15 +145,36 @@ const Navbar = () => {
         </Link>
       ))}
       <div className="flex flex-col justify-center items-center gap-3 absolute bottom-4 w-full">
-        <Link href={''} className="hover:text-cyan-600">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        <Link href={""} className="hover:text-cyan-600">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
           </svg>
-
         </Link>
-        <Link href={''} className="hover:text-cyan-600">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        <Link href={""} className="hover:text-cyan-600">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
           </svg>
         </Link>
       </div>
