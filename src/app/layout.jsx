@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Main from "@/components/Main";
+import { redirect } from "next/navigation";
 
 export const metadata = {
   title: "Gilang Cahyono",
