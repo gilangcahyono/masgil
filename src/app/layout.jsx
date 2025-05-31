@@ -15,6 +15,8 @@ const inter = Inter({
 });
 
 export default function RootLayout({ children }) {
+  return redirect("https://gilangcahyono.github.io");
+
   return (
     <html lang="en" className={inter.className + " text-gray-100"}>
       <body className="antialiased bg-cyan-500">
